@@ -18,3 +18,8 @@ test("Intensionally failed test",async({page})=>{
     await expect(page).toHaveURL('https://www.demoblaze.com/')
     
 })
+test("Intensionally failed test22",async({page})=>{
+     await page.goto('https://www.demoblaze.com/')
+    await expect(page).toHaveURL('https://www.demoblaze.com/')
+    
+})
