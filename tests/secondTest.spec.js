@@ -23,3 +23,8 @@ test("Intensionally failed test2",async({page})=>{
     await expect(page).toHaveURL('https://www.demoblaze.com/')
     
 })
+test("Intensionally failed test3",async({page})=>{
+     await page.goto('https://www.demoblaze.com/')
+    await expect(page).toHaveURL('https://www.demoblaze.com/')
+    
+})
