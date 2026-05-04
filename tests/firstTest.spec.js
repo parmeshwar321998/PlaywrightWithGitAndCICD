@@ -13,3 +13,8 @@ test("Element Visible",async({page})=>{
     await expect(page.getByRole('link',{name:'Home'})).toBeVisible();
     
 })
+test("Intensionally failed test",async({page})=>{
+     await page.goto('https://www.demoblaze.com/')
+    await expect(page).toHaveURL('https://www.demoblaze.comxxxx/')
+    
+})
