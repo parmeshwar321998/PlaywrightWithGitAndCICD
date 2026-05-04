@@ -15,6 +15,6 @@ test("Element Visible",async({page})=>{
 })
 test("Intensionally failed test",async({page})=>{
      await page.goto('https://www.demoblaze.com/')
-    await expect(page).toHaveURL('https://www.demoblaze.comxxxx/')
+    await expect(page).toHaveURL('https://www.demoblaze.com/')
     
 })
